@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="BanglaPress — বাংলাদেশের সর্বশেষ সংবাদ, দেশ, রাজনীতি, আন্তর্জাতিক, অর্থনীতি, খেলাধুলা, প্রযুক্তি ও বিনোদনের আপডেট।">
+
+    <meta name="theme-color" content="#0b1f3a">
+
+    <title>BanglaPress — সর্বশেষ সংবাদ</title>
+
+    <!-- =========================
+         GOOGLE FONTS
+    ========================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- =========================
+         BOOTSTRAP ICONS
+    ========================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- =========================
+         CUSTOM CSS
+    ========================== -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     TOP BAR
+===================================================== -->
+
+<div class="top-bar">
+
+    <div class="container top-bar-inner">
+
+        <div class="top-date">
+            <i class="bi bi-calendar3"></i>
+            <span id="currentDate">
+                আজকের সংবাদ
+            </span>
+        </div>
+
+        <div class="top-links">
+
+            <a href="#about">
+                আমাদের সম্পর্কে
+            </a>
+
+            <a href="#contact">
+                যোগাযোগ
+            </a>
+
+            <a href="#newsletter">
+                নিউজলেটার
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="main-header">
+
+    <div class="container header-inner">
+
+
+        <!-- LOGO -->
+
+        <a href="#home" class="brand">
+
+            <div class="brand-icon">
+                <i class="bi bi-newspaper"></i>
+            </div>
+
+            <div class="brand-text">
+
+                <strong>
+                    Bangla<span>Press</span>
+                </strong>
+
+                <small>
+                    সত্যের সাথে, সময়ের সাথে
+                </small>
+
+            </div>
+
+        </a>
+
+
+        <!-- HEADER RIGHT -->
+
+        <div class="header-actions">
+
+
+            <!-- SEARCH -->
+
+            <button
+                class="header-icon-btn"
+                id="searchToggle"
+                aria-label="Search"
+            >
+                <i class="bi bi-search"></i>
+            </button>
+
+
+            <!-- DARK MODE -->
+
+            <button
+                class="header-icon-btn"
+                id="darkModeBtn"
+                aria-label="Dark mode"
+            >
+                <i class="bi bi-moon"></i>
+            </button>
+
+
+            <!-- MENU -->
+
+            <button
+                class="mobile-menu-btn"
+                id="mobileMenuBtn"
+                aria-label="Open menu"
+            >
+                <i class="bi bi-list"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- SEARCH PANEL -->
+
+    <div class="search-panel" id="searchPanel">
+
+        <div class="container">
+
+            <form
+                class="search-form"
+                id="newsSearchForm"
+            >
+
+                <div class="search-input-wrap">
+
+                    <i class="bi bi-search"></i>
+
+                    <input
+                        type="search"
+                        id="newsSearch"
+                        placeholder="সংবাদ খুঁজুন..."
+                        autocomplete="off"
+                    >
+
+                </div>
+
+                <button type="submit">
+                    খুঁজুন
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+    <nav class="main-nav">
+
+        <div class="container">
+
+            <ul class="nav-list">
+
+                <li>
+                    <a
+                        href="#home"
+                        class="nav-link active"
+                    >
+                        <i class="bi bi-house"></i>
+                        প্রচ্ছদ
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#bangladesh"
+                        class="nav-link"
+                    >
+                        বাংলাদেশ
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#politics"
+                        class="nav-link"
+                    >
+                        রাজনীতি
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#international"
+                        class="nav-link"
+                    >
+                        আন্তর্জাতিক
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#economy"
+                        class="nav-link"
+                    >
+                        অর্থনীতি
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#sports"
+                        class="nav-link"
+                    >
+                        খেলাধুলা
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#technology"
+                        class="nav-link"
+                    >
+                        প্রযুক্তি
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#entertainment"
+                        class="nav-link"
+                    >
+                        বিনোদন
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#health"
+                        class="nav-link"
+                    >
+                        স্বাস্থ্য
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- =====================================================
+     MOBILE MENU
+===================================================== -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <div class="mobile-menu-header">
+
+        <strong>
+            BanglaPress
+        </strong>
+
+        <button
+            id="closeMobileMenu"
+            aria-label="Close menu"
+        >
+            <i class="bi bi-x-lg"></i>
+        </button>
+
+    </div>
+
+
+    <div class="mobile-menu-links">
+
+        <a href="#home">
+            <i class="bi bi-house"></i>
+            প্রচ্ছদ
+        </a>
+
+        <a href="#bangladesh">
+            <i class="bi bi-flag"></i>
+            বাংলাদেশ
+        </a>
+
+        <a href="#politics">
+            <i class="bi bi-bank"></i>
+            রাজনীতি
+        </a>
+
+        <a href="#international">
+            <i class="bi bi-globe"></i>
+            আন্তর্জাতিক
+        </a>
+
+        <a href="#economy">
+            <i class="bi bi-graph-up"></i>
+            অর্থনীতি
+        </a>
+
+        <a href="#sports">
+            <i class="bi bi-trophy"></i>
+            খেলাধুলা
+        </a>
+
+        <a href="#technology">
+            <i class="bi bi-cpu"></i>
+            প্রযুক্তি
+        </a>
+
+        <a href="#entertainment">
+            <i class="bi bi-camera-reels"></i>
+            বিনোদন
+        </a>
+
+        <a href="#health">
+            <i class="bi bi-heart-pulse"></i>
+            স্বাস্থ্য
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     BREAKING NEWS
+===================================================== -->
+
+<section class="breaking-news">
+
+    <div class="container breaking-inner">
+
+        <div class="breaking-label">
+
+            <span class="breaking-dot"></span>
+
+            <strong>
+                BREAKING
+            </strong>
+
+        </div>
+
+
+        <div class="breaking-content">
+
+            <div
+                class="breaking-track"
+                id="breakingNews"
+            >
+
+                <span>
+                    সর্বশেষ সংবাদ লোড হচ্ছে...
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="breaking-controls">
+
+            <button id="breakingPrev">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+
+            <button id="breakingNext">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main id="home">
+
+
+<!-- =====================================================
+     HERO NEWS
+===================================================== -->
+
+<section class="hero-news section">
+
+    <div class="container">
+
+        <div class="section-heading compact">
+
+            <div>
+
+                <span class="section-label">
+                    সর্বশেষ আপডেট
+                </span>
+
+                <h1>
+                    আজকের <span>প্রধান সংবাদ</span>
+                </h1>
+
+            </div>
+
+            <div class="live-indicator">
+
+                <span></span>
+
+                LIVE NEWS
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-news-grid">
+
+
+            <!-- MAIN NEWS -->
+
+            <article
+                class="main-news-card"
+                id="featuredNews"
+            >
+
+                <div class="news-image">
+
+                    <img
+                        src=""
+                        alt="সর্বশেষ প্রধান সংবাদ"
+                        id="featuredImage"
+                    >
+
+                    <span class="category-badge">
+                        সর্বশেষ
+                    </span>
+
+                </div>
+
+
+                <div class="main-news-content">
+
+                    <span
+                        class="news-category"
+                        id="featuredCategory"
+                    >
+                        সর্বশেষ সংবাদ
+                    </span>
+
+                    <h2 id="featuredTitle">
+                        সর্বশেষ সংবাদ লোড হচ্ছে...
+                    </h2>
+
+                    <p id="featuredDescription">
+                        যাচাই করা সর্বশেষ সংবাদ এখানে প্রদর্শিত হবে।
+                    </p>
+
+
+                    <div class="news-meta">
+
+                        <span id="featuredSource">
+                            <i class="bi bi-building"></i>
+                            Source
+                        </span>
+
+                        <span id="featuredTime">
+                            <i class="bi bi-clock"></i>
+                            সময়
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="read-more"
+                        id="featuredLink"
+                    >
+                        বিস্তারিত পড়ুন
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- SIDE NEWS -->
+
+            <div
+                class="side-news-list"
+                id="sideNews"
+            >
+
+                <article class="side-news-card">
+
+                    <div class="side-news-image">
+
+                        <img
+                            src=""
+                            alt="সংবাদ"
+                        >
+
+                    </div>
+
+                    <div class="side-news-content">
+
+                        <span>
+                            সংবাদ
+                        </span>
+
+                        <h3>
+                            সংবাদ লোড হচ্ছে...
+                        </h3>
+
+                        <small>
+                            <i class="bi bi-clock"></i>
+                            আপডেট হচ্ছে
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="side-news-card">
+
+                    <div class="side-news-image">
+
+                        <img
+                            src=""
+                            alt="সংবাদ"
+                        >
+
+                    </div>
+
+                    <div class="side-news-content">
+
+                        <span>
+                            সংবাদ
+                        </span>
+
+                        <h3>
+                            সংবাদ লোড হচ্ছে...
+                        </h3>
+
+                        <small>
+                            <i class="bi bi-clock"></i>
+                            আপডেট হচ্ছে
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="side-news-card">
+
+                    <div class="side-news-image">
+
+                        <img
+                            src=""
+                            alt="সংবাদ"
+                        >
+
+                    </div>
+
+                    <div class="side-news-content">
+
+                        <span>
+                            সংবাদ
+                        </span>
+
+                        <h3>
+                            সংবাদ লোড হচ্ছে...
+                        </h3>
+
+                        <small>
+                            <i class="bi bi-clock"></i>
+                            আপডেট হচ্ছে
+                        </small>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     BANGLADESH NEWS
+===================================================== -->
+
+<section
+    class="news-section section"
+    id="bangladesh"
+>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    বাংলাদেশ
+                </span>
+
+                <h2>
+                    বাংলাদেশের <span>সর্বশেষ খবর</span>
+                </h2>
+
+            </div>
+
+            <a
+                href="#"
+                class="view-all"
+                data-category="bangladesh"
+            >
+                সব খবর
+                <i class="bi bi-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <div
+            class="news-grid"
+            id="bangladeshNews"
+        >
+
+            <!-- JS WILL LOAD NEWS -->
+
+            <div class="news-loading">
+                <div class="loading-spinner"></div>
+                <p>সংবাদ লোড হচ্ছে...</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     POLITICS + INTERNATIONAL
+===================================================== -->
+
+<section class="split-news-section section">
+
+    <div class="container">
+
+        <div class="split-grid">
+
+
+            <!-- POLITICS -->
+
+            <div
+                class="news-category-block"
+                id="politics"
+            >
+
+                <div class="section-heading small">
+
+                    <div>
+
+                        <span class="section-label">
+                            রাজনীতি
+                        </span>
+
+                        <h2>
+                            রাজনীতির <span>খবর</span>
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="#"
+                        data-category="politics"
+                    >
+                        আরও
+                    </a>
+
+                </div>
+
+
+                <div
+                    class="category-news-list"
+                    id="politicsNews"
+                >
+
+                    <div class="news-loading">
+                        <div class="loading-spinner"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- INTERNATIONAL -->
+
+            <div
+                class="news-category-block"
+                id="international"
+            >
+
+                <div class="section-heading small">
+
+                    <div>
+
+                        <span class="section-label">
+                            আন্তর্জাতিক
+                        </span>
+
+                        <h2>
+                            বিশ্ব <span>সংবাদ</span>
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="#"
+                        data-category="international"
+                    >
+                        আরও
+                    </a>
+
+                </div>
+
+
+                <div
+                    class="category-news-list"
+                    id="internationalNews"
+                >
+
+                    <div class="news-loading">
+                        <div class="loading-spinner"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ECONOMY
+===================================================== -->
+
+<section
+    class="news-section section"
+    id="economy"
+>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    অর্থনীতি
+                </span>
+
+                <h2>
+                    ব্যবসা ও <span>অর্থনীতি</span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="news-grid four-columns"
+            id="economyNews"
+        >
+
+            <div class="news-loading">
+
+                <div class="loading-spinner"></div>
+
+                <p>
+                    সংবাদ লোড হচ্ছে...
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SPORTS
+===================================================== -->
+
+<section
+    class="news-section sports-section section"
+    id="sports"
+>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    খেলাধুলা
+                </span>
+
+                <h2>
+                    খেলার <span>সর্বশেষ খবর</span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="news-grid"
+            id="sportsNews"
+        >
+
+            <div class="news-loading">
+
+                <div class="loading-spinner"></div>
+
+                <p>
+                    সংবাদ লোড হচ্ছে...
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TECHNOLOGY
+===================================================== -->
+
+<section
+    class="news-section section"
+    id="technology"
+>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    প্রযুক্তি
+                </span>
+
+                <h2>
+                    প্রযুক্তির <span>দুনিয়া</span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="news-grid"
+            id="technologyNews"
+        >
+
+            <div class="news-loading">
+
+                <div class="loading-spinner"></div>
+
+                <p>
+                    সংবাদ লোড হচ্ছে...
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ENTERTAINMENT + HEALTH
+===================================================== -->
+
+<section class="split-news-section section">
+
+    <div class="container">
+
+        <div class="split-grid">
+
+
+            <!-- ENTERTAINMENT -->
+
+            <div
+                class="news-category-block"
+                id="entertainment"
+            >
+
+                <div class="section-heading small">
+
+                    <div>
+
+                        <span class="section-label">
+                            বিনোদন
+                        </span>
+
+                        <h2>
+                            বিনোদন <span>জগত</span>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="category-news-list"
+                    id="entertainmentNews"
+                >
+
+                    <div class="news-loading">
+
+                        <div class="loading-spinner"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HEALTH -->
+
+            <div
+                class="news-category-block"
+                id="health"
+            >
+
+                <div class="section-heading small">
+
+                    <div>
+
+                        <span class="section-label">
+                            স্বাস্থ্য
+                        </span>
+
+                        <h2>
+                            স্বাস্থ্য <span>সংবাদ</span>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="category-news-list"
+                    id="healthNews"
+                >
+
+                    <div class="news-loading">
+
+                        <div class="loading-spinner"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     LATEST NEWS
+===================================================== -->
+
+<section
+    class="latest-section section"
+    id="latest"
+>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    LIVE UPDATE
+                </span>
+
+                <h2>
+                    সর্বশেষ <span>সংবাদ</span>
+                </h2>
+
+            </div>
+
+            <button
+                class="refresh-btn"
+                id="refreshNews"
+            >
+                <i class="bi bi-arrow-clockwise"></i>
+                আপডেট
+            </button>
+
+        </div>
+
+
+        <div class="latest-layout">
+
+
+            <!-- LATEST LIST -->
+
+            <div
+                class="latest-news-list"
+                id="latestNews"
+            >
+
+                <div class="news-loading">
+
+                    <div class="loading-spinner"></div>
+
+                    <p>
+                        সর্বশেষ সংবাদ লোড হচ্ছে...
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- SIDEBAR -->
+
+            <aside class="news-sidebar">
+
+
+                <!-- POPULAR -->
+
+                <div class="sidebar-box">
+
+                    <div class="sidebar-title">
+
+                        <h3>
+                            জনপ্রিয় সংবাদ
+                        </h3>
+
+                        <span></span>
+
+                    </div>
+
+
+                    <div
+                        class="popular-news"
+                        id="popularNews"
+                    >
+
+                        <div class="popular-item">
+
+                            <strong>
+                                01
+                            </strong>
+
+                            <p>
+                                জনপ্রিয় সংবাদ লোড হচ্ছে...
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- NEWSLETTER -->
+
+                <div
+                    class="newsletter-box"
+                    id="newsletter"
+                >
+
+                    <div class="newsletter-icon">
+
+                        <i class="bi bi-envelope-paper"></i>
+
+                    </div>
+
+                    <h3>
+                        নিউজলেটার
+                    </h3>
+
+                    <p>
+                        গুরুত্বপূর্ণ সংবাদ সরাসরি আপনার
+                        ইমেইলে পেতে সাবস্ক্রাইব করুন।
+                    </p>
+
+
+                    <form
+                        id="newsletterForm"
+                    >
+
+                        <input
+                            type="email"
+                            id="newsletterEmail"
+                            placeholder="আপনার ইমেইল"
+                            required
+                        >
+
+                        <button type="submit">
+                            সাবস্ক্রাইব
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+    class="about-section section"
+    id="about"
+>
+
+    <div class="container">
+
+        <div class="about-grid">
+
+
+            <div class="about-content">
+
+                <span class="section-label">
+                    ABOUT US
+                </span>
+
+                <h2>
+                    নির্ভরযোগ্য সংবাদ,
+                    <span>সবার আগে।</span>
+                </h2>
+
+                <p>
+                    BanglaPress একটি আধুনিক সংবাদ প্ল্যাটফর্ম,
+                    যেখানে পাঠকদের জন্য বিভিন্ন নির্ভরযোগ্য
+                    উৎস থেকে সাম্প্রতিক সংবাদ এক জায়গায়
+                    তুলে ধরা হবে।
+                </p>
+
+                <p>
+                    আমাদের লক্ষ্য হলো দ্রুত সংবাদ দেওয়ার
+                    পাশাপাশি তথ্যের উৎস ও মূল প্রতিবেদনের
+                    লিংক পরিষ্কারভাবে তুলে ধরা।
+                </p>
+
+
+                <div class="about-features">
+
+                    <div>
+                        <i class="bi bi-check-circle-fill"></i>
+                        যাচাই করা সংবাদ
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check-circle-fill"></i>
+                        মূল উৎসের লিংক
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check-circle-fill"></i>
+                        দ্রুত আপডেট
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check-circle-fill"></i>
+                        পাঠকবান্ধব ডিজাইন
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-card">
+
+                <div class="about-card-icon">
+
+                    <i class="bi bi-shield-check"></i>
+
+                </div>
+
+                <h3>
+                    Source First
+                </h3>
+
+                <p>
+                    প্রতিটি সংবাদের সঙ্গে মূল সংবাদ
+                    প্রকাশকারী উৎসের তথ্য রাখা হবে।
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer
+    class="footer"
+    id="contact"
+>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <a href="#home" class="brand footer-logo">
+
+                    <div class="brand-icon">
+
+                        <i class="bi bi-newspaper"></i>
+
+                    </div>
+
+                    <div class="brand-text">
+
+                        <strong>
+                            Bangla<span>Press</span>
+                        </strong>
+
+                        <small>
+                            সত্যের সাথে, সময়ের সাথে
+                        </small>
+
+                    </div>
+
+                </a>
+
+
+                <p>
+                    বাংলাদেশের সর্বশেষ সংবাদ, দেশ ও
+                    বিশ্বের গুরুত্বপূর্ণ আপডেট এক জায়গায়।
+                </p>
+
+
+                <div class="social-links">
+
+                    <a
+                        href="#"
+                        aria-label="Facebook"
+                    >
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="YouTube"
+                    >
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="Instagram"
+                    >
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="X"
+                    >
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- EXPLORE -->
+
+            <div class="footer-column">
+
+                <h4>
+                    বিভাগ
+                </h4>
+
+                <a href="#bangladesh">
+                    বাংলাদেশ
+                </a>
+
+                <a href="#politics">
+                    রাজনীতি
+                </a>
+
+                <a href="#international">
+                    আন্তর্জাতিক
+                </a>
+
+                <a href="#economy">
+                    অর্থনীতি
+                </a>
+
+                <a href="#sports">
+                    খেলাধুলা
+                </a>
+
+            </div>
+
+
+            <!-- MORE -->
+
+            <div class="footer-column">
+
+                <h4>
+                    আরও
+                </h4>
+
+                <a href="#technology">
+                    প্রযুক্তি
+                </a>
+
+                <a href="#entertainment">
+                    বিনোদন
+                </a>
+
+                <a href="#health">
+                    স্বাস্থ্য
+                </a>
+
+                <a href="#about">
+                    আমাদের সম্পর্কে
+                </a>
+
+                <a href="#contact">
+                    যোগাযোগ
+                </a>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-column">
+
+                <h4>
+                    যোগাযোগ
+                </h4>
+
+                <div class="footer-contact">
+
+                    <p>
+                        <i class="bi bi-envelope"></i>
+                        contact@banglapress.com
+                    </p>
+
+                    <p>
+                        <i class="bi bi-telephone"></i>
+                        +880 1XXX-XXXXXX
+                    </p>
+
+                    <p>
+                        <i class="bi bi-geo-alt"></i>
+                        ঢাকা, বাংলাদেশ
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 BanglaPress. সর্বস্বত্ব সংরক্ষিত।
+            </p>
+
+            <div>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     NEWS DETAIL MODAL
+===================================================== -->
+
+<div
+    class="news-modal"
+    id="newsModal"
+    aria-hidden="true"
+>
+
+    <div class="news-modal-overlay"></div>
+
+    <div class="news-modal-content">
+
+        <button
+            class="modal-close"
+            id="closeNewsModal"
+            aria-label="Close"
+        >
+            <i class="bi bi-x-lg"></i>
+        </button>
+
+
+        <div class="modal-news-image">
+
+            <img
+                src=""
+                alt="সংবাদ"
+                id="modalNewsImage"
+            >
+
+        </div>
+
+
+        <div class="modal-news-body">
+
+            <span
+                class="news-category"
+                id="modalNewsCategory"
+            >
+                সংবাদ
+            </span>
+
+            <h2 id="modalNewsTitle">
+                সংবাদ
+            </h2>
+
+            <div
+                class="news-meta"
+                id="modalNewsMeta"
+            >
+                <span>
+                    <i class="bi bi-building"></i>
+                    Source
+                </span>
+            </div>
+
+            <p id="modalNewsDescription">
+                সংবাদ বিবরণ
+            </p>
+
+
+            <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                id="modalNewsLink"
+                class="modal-read-btn"
+            >
+                মূল সংবাদ পড়ুন
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     TOAST
+===================================================== -->
+
+<div
+    class="toast-notification"
+    id="toast"
+>
+
+    <i class="bi bi-check-circle-fill"></i>
+
+    <span id="toastMessage">
+        সফল হয়েছে
+    </span>
+
+</div>
+
+
+<!-- =====================================================
+     BACK TO TOP
+===================================================== -->
+
+<button
+    class="back-to-top"
+    id="backToTop"
+    aria-label="Back to top"
+>
+
+    <i class="bi bi-arrow-up"></i>
+
+</button>
+
+
+<!-- =====================================================
+     CUSTOM JAVASCRIPT
+===================================================== -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
